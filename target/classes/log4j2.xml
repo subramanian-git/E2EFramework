@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+ <Properties>
+<Property name="basePath">./logs</Property>
+</Properties>
+
+  <Appenders>
+  
+  	<RollingFile name="File" filePattern="${basePath}/prints-%d{yyyy-MM-dd}.log" fileName="${basePath}/prints.log">
+     <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+      <SizeBasedTriggeringPolicy size="2000" />
+          </RollingFile>
+          
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+    
+  </Appenders>
+  <Loggers>
+ 	<!--  <Logger name="packageA.Demo" level="error" additivity="false"> When additivity is provided as false this package will not be executed 
+  																	again when executing root tag
+      <AppenderRef ref="File"/> This is the name provided for Appenders - console , this will have file name when logs to be sent to file
+     </Logger> -->
+    
+    <Root level="trace">
+      <AppenderRef ref="File" level = "trace"/>
+    </Root>
+  </Loggers>
+</Configuration>

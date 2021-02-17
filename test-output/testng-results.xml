@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="79039" started-at="2020-05-17T15:15:39 IST" finished-at="2020-05-17T15:16:58 IST">
+    <groups>
+    </groups>
+    <test name="LoginTest" duration-ms="79039" started-at="2020-05-17T15:15:39 IST" finished-at="2020-05-17T15:16:58 IST">
+      <class name="FrameWork.LandingScreenTest">
+        <test-method status="PASS" signature="start()[pri:0, instance:FrameWork.LandingScreenTest@52719fb6]" name="start" is-config="true" duration-ms="37785" started-at="2020-05-17T15:15:39 IST" finished-at="2020-05-17T15:16:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="validateContentLink()[pri:0, instance:FrameWork.LandingScreenTest@52719fb6]" name="validateContentLink" duration-ms="262" started-at="2020-05-17T15:16:16 IST" finished-at="2020-05-17T15:16:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateContentLink -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:FrameWork.LandingScreenTest@52719fb6]" name="teardown" is-config="true" duration-ms="2588" started-at="2020-05-17T15:16:17 IST" finished-at="2020-05-17T15:16:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="start()[pri:0, instance:FrameWork.LandingScreenTest@52719fb6]" name="start" is-config="true" duration-ms="11111" started-at="2020-05-17T15:16:19 IST" finished-at="2020-05-17T15:16:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="FAIL" signature="validateFeaturedHeader()[pri:0, instance:FrameWork.LandingScreenTest@52719fb6]" name="validateFeaturedHeader" duration-ms="89" started-at="2020-05-17T15:16:30 IST" finished-at="2020-05-17T15:16:31 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [FEATURED COURSES123] but found [FEATURED COURSES]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [FEATURED COURSES123] but found [FEATURED COURSES]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at FrameWork.LandingScreenTest.validateFeaturedHeader(LandingScreenTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFeaturedHeader -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:FrameWork.LandingScreenTest@52719fb6]" name="teardown" is-config="true" duration-ms="2376" started-at="2020-05-17T15:16:32 IST" finished-at="2020-05-17T15:16:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- FrameWork.LandingScreenTest -->
+      <class name="FrameWork.LoginTest">
+        <test-method status="PASS" signature="start()[pri:0, instance:FrameWork.LoginTest@3012646b]" name="start" is-config="true" duration-ms="27169" started-at="2020-05-17T15:15:39 IST" finished-at="2020-05-17T15:16:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="Test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FrameWork.LoginTest@3012646b]" name="Test1" duration-ms="18767" started-at="2020-05-17T15:16:06 IST" data-provider="getData" finished-at="2020-05-17T15:16:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestrictedaccount@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ampassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non-restricted acount]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:FrameWork.LoginTest@3012646b]" name="teardown" is-config="true" duration-ms="2599" started-at="2020-05-17T15:16:25 IST" finished-at="2020-05-17T15:16:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="start()[pri:0, instance:FrameWork.LoginTest@3012646b]" name="start" is-config="true" duration-ms="11740" started-at="2020-05-17T15:16:27 IST" finished-at="2020-05-17T15:16:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="Test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FrameWork.LoginTest@3012646b]" name="Test1" duration-ms="18211" started-at="2020-05-17T15:16:39 IST" data-provider="getData" finished-at="2020-05-17T15:16:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restrictedaccount@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ampassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[restricted acount]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:FrameWork.LoginTest@3012646b]" name="teardown" is-config="true" duration-ms="459" started-at="2020-05-17T15:16:57 IST" finished-at="2020-05-17T15:16:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- FrameWork.LoginTest -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- Suite -->
+</testng-results>
